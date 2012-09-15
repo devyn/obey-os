@@ -1,7 +1,7 @@
 #include "multiboot.h"
 
 #include "main.h"
-#include "output/output.h"
+#include "../output/output.h"
 
 void os_main (multiboot_uint32_t magic, multiboot_info_t *mbi) {
 
