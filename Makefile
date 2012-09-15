@@ -7,7 +7,7 @@ DIRS := loader output
 all: os.bin
 
 os.bin: loader output
-	$(LD) -T loader/linker.ld -o os.bin loader/loader.o loader/main.o output/output.o
+	$(LD) -melf_i386 -T loader/linker.ld -o os.bin loader/loader.o loader/main.o output/output.o
 
 loader:
 	cd loader && $(MAKE) $(MFLAGS)
